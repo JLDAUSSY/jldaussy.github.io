@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuelCoPilot · Redirection</title>
+  
+  <!-- Travelpayouts Monetization Script (Marker: 595700) -->
+  <script nowprocket data-noptimize="1" data-cfasync="false" data-wpfc-render="false" seraph-accel-crit="1" data-no-defer="1" data-cmp-ab="2">
+    (function () {
+        var script = document.createElement("script");
+        script.async = 1;
+        script.setAttribute("data-cmp-ab","2");
+        script.src = 'https://tp-em.com/NTk1NzAw.js?t=595700';
+        document.head.appendChild(script);
+    })();
+  </script>
+
+  <script>
+    // Preserve query parameters (like init_marker, init_trs, etc.) and redirect to FuelPilot
+    (function() {
+      var target = '/FuelPilot/' + window.location.search;
+      setTimeout(function() {
+        window.location.replace(target);
+      }, 500);
+    })();
+  </script>
+  <style>
+    body {
+      background: #0b1426;
+      color: #fff;
+      font-family: system-ui, -apple-system, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+    .spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid rgba(56, 189, 248, 0.2);
+      border-top-color: #38bdf8;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    a { color: #38bdf8; text-decoration: none; font-weight: 600; margin-top: 10px; display: inline-block; }
+  </style>
+</head>
+<body>
+  <div class="spinner"></div>
+  <h2>Chargement de FuelCoPilot...</h2>
+  <p><a href="/FuelPilot/">Cliquez ici pour accéder directement à l'application.</a></p>
+</body>
+</html>
